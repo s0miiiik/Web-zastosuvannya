@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Logging</title>
+</head>
+<body>
+
+<!-- Форма для завантаження файлу -->
+<h2>Завантажити файл</h2>
+<form action="process.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Завантажити">
+</form>
+
+<!-- Форма для вводу тексту -->
+<h2>Записати текст у файл</h2>
+<form action="text.php" method="post">
+    <textarea name="text" rows="4" cols="50" placeholder="Введіть текст для запису у файл"></textarea>
+    <input type="submit" value="Записати">
+</form>
+
+</body>
+</html>
